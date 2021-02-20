@@ -100,3 +100,5 @@ def result():
     choice1 = random.sample(winners, 3)
 
   return render_template('result.html', url=url, users=users, num=num, choice1=choice1)
+
+app.run(host='0.0.0.0')
