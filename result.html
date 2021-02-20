@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Sorteio Instagram</title>
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <center>
+    <h1>Resultado:</h1>
+      <p>{{users}} usuários (únicos) foram selecionados.</p>
+        <p>O(s) vencedor(es) foi(foram):</p>
+        {% if num == '1' %}
+          <p>{{choice1}}</p>
+        {% elif num == '2' %}
+          <p>{{choice1[0]}}</p>
+          <p>{{choice1[1]}}</p>
+        {% elif num == '3' %}
+          <p>{{choice1[0]}}</p>
+          <p>{{choice1[1]}}</p>
+          <p>{{choice1[2]}}</p>
+        {% endif %}
+    </center>
+  </body>
+</html>
